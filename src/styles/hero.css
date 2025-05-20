@@ -1,0 +1,296 @@
+
+/* Floating particles */
+.particles-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.particle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: hsl(var(--accent));
+  border-radius: 50%;
+  top: -10px;
+  animation: float 15s infinite ease-in-out;
+  opacity: 0.6;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(-10px) scale(1);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(110vh) scale(0.5);
+    opacity: 0;
+  }
+}
+
+/* Glowing text effect */
+.glow-text {
+  text-shadow: 0 0 10px hsl(var(--accent) / 0.5);
+  animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    text-shadow: 0 0 10px hsl(var(--accent) / 0.5);
+  }
+  50% {
+    text-shadow: 0 0 20px hsl(var(--accent) / 0.7);
+  }
+  100% {
+    text-shadow: 0 0 10px hsl(var(--accent) / 0.5);
+  }
+}
+
+/* Animated shapes - enhanced */
+.animated-shapes {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.shape {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.15;
+  filter: blur(80px);
+}
+
+.shape-1 {
+  background: hsl(var(--accent));
+  width: 500px;
+  height: 500px;
+  top: -150px;
+  right: -100px;
+  animation: float-shape-1 20s infinite alternate ease-in-out;
+}
+
+.shape-2 {
+  background: hsl(var(--accent) / 0.7);
+  width: 400px;
+  height: 400px;
+  bottom: 10%;
+  left: 5%;
+  animation: float-shape-2 15s infinite alternate-reverse ease-in-out;
+}
+
+.shape-3 {
+  background: hsl(var(--primary) / 0.5);
+  width: 300px;
+  height: 300px;
+  top: 40%;
+  right: 10%;
+  animation: float-shape-3 18s infinite alternate ease-in-out;
+}
+
+.shape-4 {
+  background: hsl(var(--accent) / 0.3);
+  width: 250px;
+  height: 250px;
+  bottom: 20%;
+  right: 30%;
+  animation: float-shape-4 25s infinite alternate-reverse ease-in-out;
+}
+
+@keyframes float-shape-1 {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    transform: translateY(100px) scale(1.1);
+  }
+}
+
+@keyframes float-shape-2 {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  100% {
+    transform: translate(50px, -50px) scale(1.2);
+  }
+}
+
+@keyframes float-shape-3 {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate(-30px, 30px) rotate(10deg);
+  }
+}
+
+@keyframes float-shape-4 {
+  0% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+  }
+  100% {
+    transform: translate(40px, -40px) rotate(-15deg) scale(1.1);
+  }
+}
+
+/* Hero title and subtitle animations - enhanced */
+.hero-title {
+  position: relative;
+  transition: transform 0.2s ease-out;
+}
+
+.hero-title::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: hsl(var(--accent));
+  animation: line-grow 1.5s forwards 0.5s;
+}
+
+@keyframes line-grow {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.hero-subtitle {
+  animation: slide-fade-in 1s ease-out forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+@keyframes slide-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Tech badge animations */
+.animate-float {
+  animation: float-badge 4s infinite ease-in-out;
+}
+
+.animate-delay-100 {
+  animation-delay: 0.1s;
+}
+
+.animate-delay-200 {
+  animation-delay: 0.2s;
+}
+
+.animate-delay-300 {
+  animation-delay: 0.3s;
+}
+
+.animate-delay-400 {
+  animation-delay: 0.4s;
+}
+
+.animate-delay-500 {
+  animation-delay: 0.5s;
+}
+
+.animate-delay-600 {
+  animation-delay: 0.6s;
+}
+
+.animate-delay-700 {
+  animation-delay: 0.7s;
+}
+
+.animate-delay-800 {
+  animation-delay: 0.8s;
+}
+
+.animate-delay-900 {
+  animation-delay: 0.9s;
+}
+
+@keyframes float-badge {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+/* CTA button effects - enhanced */
+.btn-gradient {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.btn-gradient::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    hsla(var(--accent) / 0.4),
+    transparent
+  );
+  z-index: -1;
+  animation: shine 3s infinite;
+}
+
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+  20% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/* Scroll down arrow animation enhancement */
+.arrow-down {
+  position: relative;
+  animation: arrow-glow 2s infinite alternate;
+}
+
+@keyframes arrow-glow {
+  0% {
+    filter: drop-shadow(0 0 5px hsla(var(--accent) / 0.5));
+    transform: scale(1);
+  }
+  100% {
+    filter: drop-shadow(0 0 10px hsla(var(--accent) / 0.8));
+    transform: scale(1.1);
+  }
+}
