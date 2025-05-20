@@ -116,7 +116,7 @@ export function Footer() {
             <Button 
               variant="outline" 
               className="w-full flex items-center gap-2 border-accent/20 hover:border-accent/50 transition-colors duration-300"
-              onClick={() => window.open('/src/imagenes/Jesús david Guerra Pineda - CV (1).pdf', '_blank')}
+              onClick={() => window.open('/imagenes/CV_JESÚS_GUERRA.pdf', '_blank')}
               aria-label={t("footer.downloadCV")}
             >
               <Download size={16} />
