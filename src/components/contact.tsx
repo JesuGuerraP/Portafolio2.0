@@ -217,15 +217,18 @@ export function Contact() {
               </div>
               
               <div className="mt-6">
-                <Button 
-                  variant="outline" 
-                  className="w-full flex items-center justify-center gap-2 group hover:border-accent/50"
-                  onClick={() => window.open('/src/imagenes/Jesús david Guerra Pineda - CV (1).pdf', '_blank')}
-                >
-                  <Download className="w-4 h-4 group-hover:text-accent transition-colors" />
-                  <span className="group-hover:text-accent transition-colors">{t("about.download")}</span>
-                </Button>
-              </div>
+  <Button
+    variant="outline"
+    size="lg"
+    asChild
+    className="w-full flex items-center justify-center gap-2 group hover:border-accent/50"
+  >
+    <a href="/imagenes/CV_JESÚS_GUERRA.pdf" download>
+      <Download className="w-4 h-4 group-hover:text-accent transition-colors" />
+      <span className="group-hover:text-accent transition-colors">{t("about.download")}</span>
+    </a>
+  </Button>
+</div>
             </div>
           </motion.div>
         </div>

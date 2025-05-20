@@ -113,15 +113,17 @@ export function Footer() {
           
           {/* CTA & Copyright */}
           <div className="space-y-4">
-            <Button 
-              variant="outline" 
-              className="w-full flex items-center gap-2 border-accent/20 hover:border-accent/50 transition-colors duration-300"
-              onClick={() => window.open('/imagenes/CV_JESÚS_GUERRA.pdf', '_blank')}
-              aria-label={t("footer.downloadCV")}
-            >
-              <Download size={16} />
-              {t("DownloadCV")}
-            </Button>
+           <Button
+  variant="outline"
+  asChild
+  className="w-full flex items-center gap-2 border-accent/20 hover:border-accent/50 transition-colors duration-300"
+  aria-label={t("footer.downloadCV")}
+>
+  <a href="/imagenes/CV_JESÚS_GUERRA.pdf" download>
+    <Download size={16} />
+    {t("DownloadCV")}
+  </a>
+</Button>
             
             <div className="space-y-2">
               <p className="text-sm text-muted-foreground">
