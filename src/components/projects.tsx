@@ -39,7 +39,7 @@ const projects: Project[] = [
     id: "3",
     title: "Sistema de Gestión de Kiosko ATUCSARA",
     description: "Aplicativo web para la gestión de inventarios, ventas y control de productos del Kiosko ATUCSARA. Incluye funcionalidades CRUD, autenticación de usuarios, registro de ventas y reportes",
-    image: "/src/imagenes/kiosco.png",
+    image: "/imagenes/kiosco.png",
     tags: ["React", "Express", "JavaScrip", "Firebase", "Tailwind CSS","bootstrap"],
     github: "https://github.com/JesuGuerraP/Sistema-de-Gesti-n-de-KioskoAtucsara.git",
     demo: "https://sistema-de-gestion-kiosko-atucsara.vercel.app/login",
