@@ -27,7 +27,7 @@ export function About() {
             <div className="relative">
               <div className={`w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-accent/20 mx-auto transition-all duration-700 ${animateImage ? 'scale-100 shadow-xl' : 'scale-95 opacity-90'}`}>
                 <img 
-                  src="/src/imagenes/logo.jpg" 
+                  src="/imagenes/logo.jpg" 
                   alt="Jesús Guerra" 
                   className="w-full h-full object-cover"
                 />
