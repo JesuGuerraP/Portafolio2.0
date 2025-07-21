@@ -119,7 +119,7 @@ export function Footer() {
   className="w-full flex items-center gap-2 border-accent/20 hover:border-accent/50 transition-colors duration-300"
   aria-label={t("footer.downloadCV")}
 >
-  <a href="/imagenes/CV_JESÚS_GUERRA.pdf" download>
+  <a href="/imagenes/CV Jesus Guerra.pdf" download>
     <Download size={16} />
     {t("DownloadCV")}
   </a>
