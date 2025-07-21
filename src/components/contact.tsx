@@ -223,7 +223,7 @@ export function Contact() {
     asChild
     className="w-full flex items-center justify-center gap-2 group hover:border-accent/50"
   >
-    <a href="/imagenes/CV_JESÚS_GUERRA.pdf" download>
+    <a href="/imagenes/CV Jesus Guerra.pdf" download>
       <Download className="w-4 h-4 group-hover:text-accent transition-colors" />
       <span className="group-hover:text-accent transition-colors">{t("about.download")}</span>
     </a>
