@@ -52,7 +52,7 @@ export function About() {
             </p>
             <div className={`transition-all duration-700 delay-400 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
               <Button variant="default" size="lg" asChild className="relative overflow-hidden group">
-                <a href="/imagenes/CV_JESÚS_GUERRA.pdf" download>
+                <a href="/imagenes/CV Jesus Guerra.pdf" download>
                   <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-accent/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
                   <Download className="mr-2 h-4 w-4" /> {t("about.download")}
                 </a>
